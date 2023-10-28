@@ -1,0 +1,29 @@
+<section class="navbar">
+  
+<div class="navbar__icons">
+    <img src="assets/icons/iconLogo.png" alt="imageIcons" class="navbar__icons-image">
+    <button (click)="setActive()" class="navbar__button">
+      <img *ngIf="active; else open" src="assets/icons/iconsX.png" alt="iconsX" class="navbar__button-close">
+      <ng-template #open><img src="assets/icons/menu.png" alt="imageIcons" class="navbar__button-image"></ng-template>
+    </button>
+  </div>
+
+
+  <nav class="navbar__nav" [ngClass]="{'navbar__nav--active' : active}">
+    <ul class="navbar__nav-ul">
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">SOBRE MI</a></li>
+      <hr>
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">PLANES PERSONALIZADOS</a></li>
+      <hr>
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">ASESORAMIENTO</a></li>
+      <hr>
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">ANTES Y DESPUES</a></li>
+      <hr>
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">SUPLEMENTOS</a></li>
+      <hr>
+      <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+</section>
+
