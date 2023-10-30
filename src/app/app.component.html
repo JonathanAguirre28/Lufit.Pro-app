@@ -1,5 +1,4 @@
-<div class="app">
-    <app-navbar></app-navbar>
+    <app-nav-menu [isOpen]="isOpen"></app-nav-menu>
+    <app-navbar (openMenu)="onOpenMenu($event)"></app-navbar>
     <app-hero></app-hero>
-</div>
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>

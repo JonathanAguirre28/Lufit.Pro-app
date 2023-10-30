@@ -33,40 +33,7 @@
       height: 24px;
     }
   }
-  &__nav {
-    width: 600px;
-    height: 0vh;
-    background-color: black;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    pointer-events: none;
-    transition: all .5s ease;
-    &--active {
-      height: 50vh;
-      pointer-events: auto;
-    }
-    &-ul{
-      flex-direction: column;
-      &-li{
-        margin: .5em 0;
-        list-style:none;
-        margin-bottom: 30px;
-        &-hr {
-          border: 1px solid rgba(114, 114, 114, 1);
-          width: 534px;
-        }
-      }
-      &-a{
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        padding-left: 45px;
-      }
-    }
-  }
+  
 }
 
 @media (max-width: 720px){

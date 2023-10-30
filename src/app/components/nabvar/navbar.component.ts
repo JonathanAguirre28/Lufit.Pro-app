@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  @Output() openMenu = new EventEmitter<boolean>();
 
   public active : boolean = false;
    constructor() {}
@@ -13,5 +14,6 @@ export class NavbarComponent {
 
    setActive() : void {
     this.active = !this.active
+    this.openMenu.emit(this.active)
    }
 }
