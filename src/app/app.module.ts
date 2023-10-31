@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/nabvar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

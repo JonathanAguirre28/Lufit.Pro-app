@@ -7,22 +7,22 @@
         background-color: black;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         overflow: hidden;
         pointer-events: none;
         transition: all .5s ease;
-        margin-top: 20px;
         &--active {
           height: 50vh;
           pointer-events: auto;
         }
         &-ul{
+          display: flex;
+          justify-content: center;
           flex-direction: column;
           &-li{
             margin: .5em 0;
             list-style:none;
-            margin-bottom: 30px;
             &-hr {
               border: 1px solid rgba(114, 114, 114, 1);
               width: 534px;
@@ -41,6 +41,7 @@
 @media (max-width: 720px) {
     .navbar {
         &__nav {
+          justify-content: center;
             width: 340px;
             &-ul {
               &-a {
