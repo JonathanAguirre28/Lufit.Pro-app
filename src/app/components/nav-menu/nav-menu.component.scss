@@ -1,7 +1,6 @@
 .navbar {
     position: absolute;
     right: 0;
-    z-index: 20000000;
     &__nav {
         width: 600px;
         height: 0vh;
@@ -13,6 +12,7 @@
         overflow: hidden;
         pointer-events: none;
         transition: all .5s ease;
+        margin-top: 20px;
         &--active {
           height: 50vh;
           pointer-events: auto;
