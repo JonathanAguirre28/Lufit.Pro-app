@@ -1,0 +1,26 @@
+.plans {
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-content {
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1130px;
+        &-content {
+            align-items: end;
+        }
+    }
+    &__image {
+        display: flex;
+        &-content {
+            gap: 25px;
+        }
+    }
+}

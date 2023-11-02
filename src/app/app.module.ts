@@ -8,7 +8,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
-import { AboutMeComponent } from './componenets/about-me/about-me.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PlansComponent } from './components/plans/plans.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AboutMeComponent } from './componenets/about-me/about-me.component';
     HeroComponent,
     NavMenuComponent,
     AboutMeComponent,
+    PlansComponent,
   ],
   imports: [
     BrowserModule,
