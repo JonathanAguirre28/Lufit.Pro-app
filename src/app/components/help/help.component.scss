@@ -1,9 +1,16 @@
 .help {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
     &__title {
         display: flex;
         justify-content: flex-start;
+        padding: 30px;
         &-text {
             font-size: 32px;
             color: rgba(114, 114, 114, 1);
@@ -11,13 +18,11 @@
         }
     }
     &__consultation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:last baseline;
+        width: 1130px;
         &-content {
             display: flex;
             gap: 30px;
+            padding: 30px;
             &-icons {
                 width: 80px;
                 height: 80px;            
