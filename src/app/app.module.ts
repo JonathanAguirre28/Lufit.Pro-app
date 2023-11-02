@@ -13,6 +13,8 @@ import { PlansComponent } from './components/plans/plans.component';
 import { HelpComponent } from './components/help/help.component';
 import { ConsultationComponent } from './components/consultation/consultation.component';
 import { ChangesComponent } from './components/changes/changes.component';
+import { SupplementsComponent } from './components/supplements/supplements.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ChangesComponent } from './components/changes/changes.component';
     HelpComponent,
     ConsultationComponent,
     ChangesComponent,
+    SupplementsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,47 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    &__title {
+        &-content {
+            color: rgba(114, 114, 114, 1);
+            font-size: 36px;
+
+        }
+    }
+    &__subtitle {
+        &-content {
+            color: rgba(114, 114, 114, 1);
+            font-size: 32px;
+        }
+    }
+    &__text {
+        &-content {
+            color: rgba(114, 114, 114, 1);
+            font-size: 24px;
+        }
+    }
+    &__subtext {
+        &-content {
+            color: rgba(114, 114, 114, 1);
+            font-size: 24px;
+        }
+    }
+    &__button {
+        padding-bottom: 30px;
+        &-content {
+            width: 305px;
+            height: 60px;
+            background-color:rgba(95, 45, 136, 1);
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                background-color: rgba(187, 131, 184, 1)
+            }
+        }
+    }
+}
