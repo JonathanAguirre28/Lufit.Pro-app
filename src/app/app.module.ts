@@ -8,6 +8,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { AboutMeComponent } from './componenets/about-me/about-me.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
     NavbarComponent,
     HeroComponent,
     NavMenuComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
