@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { PlansComponent } from './components/plans/plans.component';
+import { HelpComponent } from './components/help/help.component';
+import { ConsultationComponent } from './components/consultation/consultation.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { PlansComponent } from './components/plans/plans.component';
     NavMenuComponent,
     AboutMeComponent,
     PlansComponent,
+    HelpComponent,
+    ConsultationComponent,
   ],
   imports: [
     BrowserModule,

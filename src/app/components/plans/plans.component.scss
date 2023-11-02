@@ -1,9 +1,14 @@
 .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__title {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
         &-content {
+            color: rgba(114, 114, 114, 1);
             font-size: 36px;
             font-weight: 700;
         }
@@ -13,14 +18,23 @@
         justify-content: center;
         align-items: center;
         width: 1130px;
+        height: 220px;
         &-content {
+            color:rgba(114, 114, 114, 1);
             align-items: end;
         }
     }
     &__image {
         display: flex;
+        gap: 80px;
         &-content {
-            gap: 25px;
+            display: flex;
+            padding-bottom: 50px;
+            &-personalized {
+                width: 325px;
+                height: 480px;
+                cursor: pointer;
+            }
         }
     }
 }
