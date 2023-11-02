@@ -1,0 +1,34 @@
+.changes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    &__title {
+        &-content {
+            font-size: 36px;
+            color: rgba(114, 114, 114, 1);
+        }
+    }
+    &__body {
+        width: 1130px;
+        &-title {
+            &-content {
+                font-size: 32px;
+                color: rgba(114, 114, 114, 1);
+            }
+        }
+        &-text {
+            &-content {
+                font-size: 24px;
+                color: rgba(114, 114, 114, 1);
+            }
+        }
+    }
+    &__footer {
+        padding-bottom: 40px;
+        &-image {
+            width: 1128px;
+            height: 550px;
+        }
+    }
+}

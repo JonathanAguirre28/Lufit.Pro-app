@@ -12,6 +12,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { HelpComponent } from './components/help/help.component';
 import { ConsultationComponent } from './components/consultation/consultation.component';
+import { ChangesComponent } from './components/changes/changes.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ConsultationComponent } from './components/consultation/consultation.co
     PlansComponent,
     HelpComponent,
     ConsultationComponent,
+    ChangesComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+.consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        &-text {
+            font-size: 36px;
+            font-weight: 900;
+            color:rgba(114, 114, 114, 1);
+        }
+    }
+    &__body{
+        &-subtitle {
+            &-text {
+                font-size: 32px;
+                color: rgba(114, 114, 114, 1);
+            }
+        }
+        &-text {
+            width: 1130px;
+            &-content {
+                font-size: 24px;
+                color: rgba(114, 114, 114, 1);
+            }
+        }
+    }
+    &__footer {
+        &-title {
+            font-size: 32px;
+            color:rgba(114, 114, 114, 1);
+        }
+    }
+    &__button {
+        padding-bottom: 30px;
+        &-content {
+            width: 170px;
+            height: 40px;
+            background-color:rgba(95, 45, 136, 1);
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                background-color: rgba(187, 131, 184, 1)
+            }
+        }
+    }
+}
