@@ -1,9 +1,16 @@
 .contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
+    height: 80vh;  
+    width: 100%;  
+    background-color: white;
+    &__content {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
     &__title {
         &-content {
             color: rgba(114, 114, 114, 1);
