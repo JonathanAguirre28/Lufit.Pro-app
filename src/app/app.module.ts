@@ -15,6 +15,7 @@ import { ConsultationComponent } from './components/consultation/consultation.co
 import { ChangesComponent } from './components/changes/changes.component';
 import { SupplementsComponent } from './components/supplements/supplements.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ChangesComponent,
     SupplementsComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
