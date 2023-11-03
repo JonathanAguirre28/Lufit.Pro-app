@@ -1,3 +1,4 @@
+@import "src/variables.scss";
 .plans {
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
         align-items: center;
         padding-top: 20px;
         &-content {
-            color: rgba(114, 114, 114, 1);
+            color: $colorSecondary;
             font-size: 36px;
             font-weight: 700;
         }
@@ -19,7 +20,7 @@
         align-items: center;
         width: 1130px;
         &-content {
-            color:rgba(114, 114, 114, 1);
+            color:$colorSecondary;
             align-items: end;
             font-size: 24px;
         }

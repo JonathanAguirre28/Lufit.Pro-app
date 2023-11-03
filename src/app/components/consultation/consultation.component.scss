@@ -1,3 +1,4 @@
+@import "src/variables.scss";
 .consultation {
     display: flex;
     flex-direction: column;
@@ -6,28 +7,28 @@
         &-text {
             font-size: 36px;
             font-weight: 900;
-            color:rgba(114, 114, 114, 1);
+            color:$colorSecondary;
         }
     }
     &__body{
         &-subtitle {
             &-text {
                 font-size: 32px;
-                color: rgba(114, 114, 114, 1);
+                color: $colorSecondary;
             }
         }
         &-text {
             width: 1130px;
             &-content {
                 font-size: 24px;
-                color: rgba(114, 114, 114, 1);
+                color: $colorSecondary;
             }
         }
     }
     &__footer {
         &-title {
             font-size: 32px;
-            color:rgba(114, 114, 114, 1);
+            color:$colorSecondary;
         }
     }
     &__button {
@@ -35,14 +36,14 @@
         &-content {
             width: 170px;
             height: 40px;
-            background-color:rgba(95, 45, 136, 1);
+            background-color:$colorButtonPrimary;
             color: white;
             border-radius: 50px;
             cursor: pointer;
             transition: 0.5s;
             font-size: 18px;
             &:hover {
-                background-color: rgba(187, 131, 184, 1)
+                background-color: $colorButtonSecondary;
             }
         }
     }

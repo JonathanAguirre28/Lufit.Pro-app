@@ -1,3 +1,4 @@
+@import "src/variables.scss";
 .contact {
     height: 80vh;  
     width: 100%;  
@@ -9,30 +10,30 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-color: black;
+        background-color: $colorPrimary;
     }
     &__title {
         &-content {
-            color: rgba(114, 114, 114, 1);
+            color: $colorSecondary;
             font-size: 36px;
 
         }
     }
     &__subtitle {
         &-content {
-            color: rgba(114, 114, 114, 1);
+            color: $colorSecondary;
             font-size: 32px;
         }
     }
     &__text {
         &-content {
-            color: rgba(114, 114, 114, 1);
+            color: $colorSecondary;
             font-size: 24px;
         }
     }
     &__subtext {
         &-content {
-            color: rgba(114, 114, 114, 1);
+            color: $colorSecondary;
             font-size: 24px;
         }
     }
@@ -41,14 +42,14 @@
         &-content {
             width: 305px;
             height: 60px;
-            background-color:rgba(95, 45, 136, 1);
+            background-color:$colorButtonPrimary;
             color: white;
             border-radius: 50px;
             cursor: pointer;
             transition: 0.5s;
             font-size: 24px;
             &:hover {
-                background-color: rgba(187, 131, 184, 1)
+                background-color: $colorButtonSecondary;
             }
         }
     }
