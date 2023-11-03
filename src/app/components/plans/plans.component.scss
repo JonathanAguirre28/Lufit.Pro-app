@@ -39,3 +39,31 @@
         }
     }
 }
+
+@media (max-width: 720px)  {
+    .plans {
+        &__title {
+            &-content {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &__text {
+            width: 358px;
+            &-content {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        &__image {
+            display: flex;
+            flex-direction: column;
+            &-content {
+                &-personalized {
+                    width: 240px;
+                    height: 280px;
+                }
+            }
+        }
+    }
+}

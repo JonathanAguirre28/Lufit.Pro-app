@@ -48,3 +48,51 @@
         }
     }
 }
+@media (max-width: 720px) {
+    .consultation {
+        &__title {
+            width: 286px;
+            &-text {
+                font-size: 24px;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &-subtitle {
+                width: 276px;
+                &-text {
+                    font-size: 20px;
+                }
+            }
+            &-text {
+                width: 358px;
+                &-content {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+            }
+        }
+        &__footer {
+            width: 273px;
+            &-title {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &__button {
+            width: 114px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            &-content {
+                font-size: 14px;
+            }
+        }
+    }
+}

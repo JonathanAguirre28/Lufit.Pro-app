@@ -36,3 +36,34 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+    .aboutme {
+        &__content {
+            &-title {
+                width: 284px;
+                &-mobile {
+                    font-size: 20px;
+                }
+            }
+            &-text {
+                font-size: 14px;
+                width: 358px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+        &__image {
+            display: flex;
+            flex-direction: column;
+            &-content {
+                display: flex;
+                justify-content: center;
+                &-mobile {
+                    width: 300px;
+                    height: 210px;
+                }
+            }
+        }
+    }
+}

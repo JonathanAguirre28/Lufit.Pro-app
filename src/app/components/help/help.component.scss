@@ -35,3 +35,52 @@
         }
     }
 }
+
+@media (max-width: 720px)  {
+    .help {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            &-text {
+                font-size: 20px;
+            }
+        }
+        &__mobile {
+            &-content {
+                width: 240px;
+                height: 280px;
+            }
+        }
+        &__consultation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 358px;
+                &-icons {
+                    width: 39px;
+                    height: 37px;
+                }
+                &-text {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 721px) {
+    .help {
+        &__mobile {
+            display: none;
+    }
+}
+}
