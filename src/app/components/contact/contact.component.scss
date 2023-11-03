@@ -54,3 +54,45 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+    .contact {
+        &__content {
+
+        }
+        &__title {
+            width: 354px;
+            &-content {
+                font-size: 24px;
+                font-weight: 700px;
+                text-align: center;
+            }
+        }
+        &__subtitle {
+            width: 354px;
+            &-content {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &__text {
+            width: 220px;
+            &-content {
+                font-size: 14px;
+            }
+        }
+        &__subtext {
+            width: 220px;
+            &-content {
+                font-size: 14px;
+            }
+        }
+        &__button {
+            &-content {
+                width: 205px;
+                height: 45px;
+                font-size: 16px
+            }
+        }
+    }
+}
