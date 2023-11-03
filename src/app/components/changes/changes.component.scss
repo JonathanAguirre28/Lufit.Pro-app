@@ -1,12 +1,13 @@
+@import "src/variables.scss";
 .changes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: $color-primary;
     &__title {
         &-content {
             font-size: 36px;
-            color: rgba(114, 114, 114, 1);
+            color: $color-secondary;
         }
     }
     &__body {
@@ -14,13 +15,13 @@
         &-title {
             &-content {
                 font-size: 32px;
-                color: rgba(114, 114, 114, 1);
+                color: $color-secondary;
             }
         }
         &-text {
             &-content {
                 font-size: 24px;
-                color: rgba(114, 114, 114, 1);
+                color: $color-secondary;
             }
         }
     }

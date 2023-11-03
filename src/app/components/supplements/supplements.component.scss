@@ -8,21 +8,20 @@
             padding: 30px;
             font-weight: 700;
             font-size: 36px;
-            color: $colorSecondary;
+            color: $color-secondary;
         }
     }
     &__text {
         width: 1130px;
         &-content{
         font-size: 24px;
-        color: $colorSecondary;
+        color: $color-secondary;
         }
     }
     &__body {
         display: flex;
         gap: 100px;
         &-image {
-            padding-bottom: 30px;
             &-content {
                 width: 210px;
                 height: 190px;
@@ -34,14 +33,15 @@
         &-button {
             width: 170px;
             height: 40px;
-            background-color: $colorButtonPrimary;
+            background-color: $color-button-primary;
             color: white;
             border-radius: 50px;
             cursor: pointer;
             transition: 0.5s;
             font-size: 18px;
+            margin-top: 50px;
             &:hover {
-                background-color:$colorButtonSecondary;
+                background-color:$color-button-secondary;
             }
         }
     }

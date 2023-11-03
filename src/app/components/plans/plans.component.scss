@@ -9,7 +9,7 @@
         align-items: center;
         padding-top: 20px;
         &-content {
-            color: $colorSecondary;
+            color: $color-secondary;
             font-size: 36px;
             font-weight: 700;
         }
@@ -20,14 +20,14 @@
         align-items: center;
         width: 1130px;
         &-content {
-            color:$colorSecondary;
+            color:$color-secondary;
             align-items: end;
             font-size: 24px;
         }
     }
     &__image {
         display: flex;
-        gap: 80px;
+        gap: 76px;
         &-content {
             display: flex;
             padding-bottom: 50px;
@@ -58,7 +58,9 @@
         &__image {
             display: flex;
             flex-direction: column;
+            gap: 10px;
             &-content {
+                padding-bottom: 0;
                 &-personalized {
                     width: 240px;
                     height: 280px;

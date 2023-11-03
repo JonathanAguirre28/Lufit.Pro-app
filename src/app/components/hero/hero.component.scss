@@ -16,7 +16,7 @@
             width: 305px;
             height: 60px;
             padding: 10px 20px;
-            background-color: $colorButtonPrimary;
+            background-color: $color-button-primary;
             color: white;
             border-radius: 50px;
             cursor: pointer;
@@ -24,7 +24,7 @@
             font-weight: 700;            
             transition: 0.5s;
             &:hover {
-                background-color: $colorButtonSecondary;
+                background-color: $color-button-secondary;
             }
         }
  }
