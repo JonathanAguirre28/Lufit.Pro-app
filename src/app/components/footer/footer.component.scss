@@ -4,6 +4,26 @@
     width: 100%;
     &__content {   
         background-color: $color-footer;
-        
+        &-icons {
+            &-image {
+            }
+        }        
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        &__content {
+            height: 170px;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            &-icons {
+                &-image {
+                    width: 64px;
+                    height: 69px;
+                }
+            }
+        }
     }
 }

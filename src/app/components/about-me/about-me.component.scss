@@ -41,6 +41,8 @@
         &__content {
             &-title {
                 width: 284px;
+                display: flex;
+                justify-content: center;
                 &-mobile {
                     font-size: 20px;
                 }

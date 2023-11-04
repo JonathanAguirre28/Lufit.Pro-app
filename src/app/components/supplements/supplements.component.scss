@@ -68,6 +68,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
             &-image {
                 &-content {
                     width: 191px;
@@ -81,6 +82,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 30px;
             &-button {
                 font-size: 14px;
             }
