@@ -1,6 +1,6 @@
 @import "src/variables.scss";
 .navbar {
-    position: absolute;
+    position: fixed;
     right: 0;
     &__nav {
         width: 600px;
@@ -41,6 +41,7 @@
 
 @media (max-width: 720px) {
     .navbar {
+      position: absolute;
         &__nav {
           justify-content: center;
             width: 340px;

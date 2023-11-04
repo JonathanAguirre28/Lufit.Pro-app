@@ -7,7 +7,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 286px;
         margin-top: 30px;
         &-content {
             color: $color-secondary;
@@ -44,6 +43,7 @@
 @media (max-width: 720px)  {
     .plans {
         &__title {
+            width: 286px;
             &-content {
                 font-size: 20px;
                 text-align: center;

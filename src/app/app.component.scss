@@ -1,0 +1,16 @@
+.app {
+    opacity: 0; /* Establecer la opacidad inicial en 0 */
+    animation: fadeIn 3s ease forwards; /* Utilizar animación CSS */
+  
+    /* Agregar otros estilos necesarios para tu página */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1; /* Asegurarse de que la opacidad esté en 1 al final */
+    }
+  }
