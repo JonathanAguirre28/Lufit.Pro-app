@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-menu',
@@ -7,4 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class NavMenuComponent {
   @Input() isOpen: boolean = false;
+
+  constructor (public router: Router){}
+
+  aboutMe() {
+    console.log('click')
+    this.router.navigate(['.'], {
+      fragment: 'about-me' 
+    })
+  }
 }

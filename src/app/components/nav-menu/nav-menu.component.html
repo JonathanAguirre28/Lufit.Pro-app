@@ -1,7 +1,7 @@
 <div class="navbar">
     <nav class="navbar__nav" [ngClass]="{'navbar__nav--active' : isOpen}">
         <ul class="navbar__nav-ul">
-          <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">SOBRE MI</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="aboutMe()" href="#" class="navbar__nav-ul-a">SOBRE MI</a></li>
           <hr class="navbar__nav-ul-li-hr">
           <li class="navbar__nav-ul-li"><a href="#" class="navbar__nav-ul-a">PLANES PERSONALIZADOS</a></li>
           <hr class="navbar__nav-ul-li-hr">
