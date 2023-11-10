@@ -28,10 +28,13 @@
     &__image {
         display: flex;
         justify-content: center;
-        gap: 20px;
         padding-bottom: 50px;
         &-content {
-            width: 550px;
+            width: 380px;
+            &-mobile {
+                width: 327px;
+                height: 455px;
+            }
         }
     }
 }
@@ -57,12 +60,17 @@
         &__image {
             display: flex;
             flex-direction: column;
+            gap: 35px;
             &-content {
                 display: flex;
                 justify-content: center;
                 &-mobile {
                     width: 300px;
-                    height: 210px;
+                    height: 350px;
+                    &-center {
+                        width: 270px;
+                        height: 350px;
+                    } 
                 }
             }
         }

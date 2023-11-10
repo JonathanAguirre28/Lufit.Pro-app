@@ -1,24 +1,28 @@
 @import "src/variables.scss";
 .hero {
-    background-image: url("/assets/image/imageHero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 821px;
-    &__title {
+    padding: 15px 0;
+    padding-top: 113px;
+    &__image{
+        background-image: url("/assets/image/imageHero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 821px;
+    &-title {
         position: absolute;
-        top: 45%;
-        left: 13%;
+        top: 55%;
+        left: 23%;
         width: 691px;
+        height: 132px;
         &-content{
             font-size: 60px;
             color: white;
         }
     }
-    &__button {
+    &-button {
         position: absolute;
-        top: 62%;
-        left: 25%;
+        top: 80%;
+        left: 30%;
         transform: translate(-50%, -50%);
         border: 0;
         padding: 15px;
@@ -39,17 +43,35 @@
         }
  }
 }
+}
 
 @media (max-width: 720px) {
     .hero {
-        &__button {
-            top: 80%;
+        padding: 0;
+        &__image {
+            background-image: url("/assets/image/imageHeroMobile.png");
+            width: 412px;
+            height: 390px;
+            &-title {
+                top: 22%;
+                left: 9%;
+                width: 321px;
+                height: 66px;
+                text-align: center;
+                &-content {
+                    font-size: 30px;
+                }
+            }
+        &-button {
+            top: 37%;
+            left: 45%;
             &-content {
+                font-size: 14px;
                 width: 205px;
                 height: 45px;
-                border-radius: 25px;
-                font-size: 12px;
+                padding: 0;
             }
         }
     }
+}
 }
