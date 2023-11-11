@@ -9,12 +9,14 @@ import { Router } from '@angular/router';
 export class NavMenuComponent {
   @Input() isOpen: boolean = false;
 
-  constructor (public router: Router){}
+  constructor(public router: Router) {}
 
-  aboutMe() {
-    console.log('click')
+  navigateAndClose(fragment: string) {
+    console.log('click');
     this.router.navigate(['.'], {
-      fragment: 'about-me' 
-    })
+      fragment: fragment
+    });
+    this.isOpen = false;
   }
 }
+
