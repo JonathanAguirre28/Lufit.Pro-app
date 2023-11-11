@@ -55,6 +55,9 @@
                 width: 358px;
                 text-align: center;
                 padding: 10px;
+                &-center{
+                    color: $color-white;
+                }
             }
         }
         &__image {

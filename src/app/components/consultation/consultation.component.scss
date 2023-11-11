@@ -7,28 +7,28 @@
         &-text {
             font-size: 36px;
             font-weight: 900;
-            color:$color-secondary;
+            color: $color-primary;
         }
     }
     &__body{
         &-subtitle {
             &-text {
                 font-size: 32px;
-                color: $color-secondary;
+                color: $color-primary;
             }
         }
         &-text {
             width: 1130px;
             &-content {
                 font-size: 24px;
-                color: $color-secondary;
+                color: $color-primary;
             }
         }
     }
     &__footer {
         &-title {
             font-size: 32px;
-            color:$color-secondary;
+            color: $color-primary;
         }
     }
     &__button {
