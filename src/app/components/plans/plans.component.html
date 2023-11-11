@@ -8,23 +8,22 @@
             Fugit saepe, veritatis culpa id facere accusantium ipsam eum rem fugiat perspiciatis harum consequuntur ea ipsa minima dolorum neque velit sit sunt nisi blanditiis tempora reiciendis? Perspiciatis quibusdam sed voluptatibus. </p>
     </div>
 
-   <div class="plans__image">
-       
-       <div class="plans__image-content">
-        <div>img</div>
-        <div>title</div>
-        <div>subtitle</div>
+   <div class="plans__cards" *ngFor="let item of cards">
+
+    <div class="plans__cards-center">
+        <div class="plans__cards-center-content">
+            <img src="{{item.imagen}}" alt="imagePlans" class="plans__cards-center-content-image">
+            <img src="{{item.imageMobile}}" alt="imagePlans" class="plans__cards-center-content-imageMobile">
         </div>
-        <div class="plans__image-content">
-            <div>img</div>
-            <div>title</div>
-            <div>subtitle</div>
-        </div>       
-       <div class="plans__image-content">
-        <div>img</div>
-        <div>title</div>
-        <div>subtitle</div>
-       </div>
+    
+        <div class="plans__cards-title">
+            <div class="plans__cards-title-content"> {{item.titulo}} </div>
+            <div class="plans__cards-title-span"> {{item.span}} </div>
+             <div class="plans__cards-title-subtitle"> {{item.subtitulo}} </div>
+             <div class="plans__cards-title-text"> {{item.text}} </div>        
+        </div>
+    </div>
+
 
    </div>
 
