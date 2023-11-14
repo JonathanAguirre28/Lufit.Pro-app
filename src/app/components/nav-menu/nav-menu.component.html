@@ -1,17 +1,17 @@
 <div class="navbar">
-    <nav class="navbar__nav" [ngClass]="{'navbar__nav--active' : isOpen} ">
+    <nav class="navbar__nav" [ngClass]="{'navbar__nav--active' : navbarStatus } ">
         <ul class="navbar__nav-ul">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('about-me')" href="#about-me" class="navbar__nav-ul-a">SOBRE MI</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#about-me" class="navbar__nav-ul-a">SOBRE MI</a></li>
           <hr class="navbar__nav-ul-li-hr">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('plans')"  href="#plans" class="navbar__nav-ul-a">PLANES PERSONALIZADOS</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#plans" class="navbar__nav-ul-a">PLANES PERSONALIZADOS</a></li>
           <hr class="navbar__nav-ul-li-hr">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('consultation')" href="#consultation" class="navbar__nav-ul-a">ASESORAMIENTO</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#consultation" class="navbar__nav-ul-a">ASESORAMIENTO</a></li>
           <hr class="navbar__nav-ul-li-hr">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('changes')" href="#changes" class="navbar__nav-ul-a">ANTES Y DESPUES</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#changes" class="navbar__nav-ul-a">ANTES Y DESPUES</a></li>
           <hr class="navbar__nav-ul-li-hr">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('supplements')" href="#supplements" class="navbar__nav-ul-a">SUPLEMENTOS</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#supplements" class="navbar__nav-ul-a">SUPLEMENTOS</a></li>
           <hr class="navbar__nav-ul-li-hr">
-          <li class="navbar__nav-ul-li"><a (click)="navigateAndClose('contact')" href="#contact" class="navbar__nav-ul-a">CONTACTO</a></li>
+          <li class="navbar__nav-ul-li"><a (click)="setActive()" href="#contact" class="navbar__nav-ul-a">CONTACTO</a></li>
           <hr class="navbar__nav-ul-li-hr">
         </ul>
       </nav>

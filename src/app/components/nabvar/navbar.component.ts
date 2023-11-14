@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +7,21 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  @Output() openMenu = new EventEmitter<boolean>();
+   navbarStatus: boolean = false;
+   constructor(private navbarService: NavbarService) {}
+   ngOnInit(): void {
+    this.getNavbarStatus()
+   }
 
-  public active : boolean = false;
-   constructor() {}
-   ngOnInit(): void {}
+   getNavbarStatus(){
+    this.navbarService.currentNavbar$.subscribe({
+      next:(estatus) => {
+        this.navbarStatus = estatus;
+      }
+    })
+   }
 
    setActive() : void {
-    this.active = !this.active
-    this.openMenu.emit(this.active)
+    this.navbarService.setNavbar(!this.navbarStatus)
    }
 }

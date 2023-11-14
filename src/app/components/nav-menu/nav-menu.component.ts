@@ -1,22 +1,29 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 @Component({
   selector: 'app-nav-menu',
   templateUrl: './nav-menu.component.html',
   styleUrls: ['./nav-menu.component.scss']
 })
-export class NavMenuComponent {
-  @Input() isOpen: boolean = false;
+export class NavMenuComponent implements OnInit{
+  constructor(private navbarService: NavbarService){  }
+  navbarStatus: boolean = false;
 
-  constructor(public router: Router) {}
+  ngOnInit(): void {
+    this.getNavbarStatus()
+   }
 
-  navigateAndClose(fragment: string) {
-    console.log('click');
-    this.router.navigate(['.'], {
-      fragment: fragment
-    });
-    this.isOpen = false;
+  getNavbarStatus(){
+    this.navbarService.currentNavbar$.subscribe({
+      next:(estatus) => {
+        this.navbarStatus = estatus;
+      }
+    })
+   }
+
+   setActive() : void {
+    this.navbarService.setNavbar(!this.navbarStatus)
+   }
   }
-}
 

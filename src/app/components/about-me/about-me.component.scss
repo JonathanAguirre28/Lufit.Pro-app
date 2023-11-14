@@ -70,9 +70,11 @@
                 &-mobile {
                     width: 300px;
                     height: 350px;
+                    object-fit: contain;
                     &-center {
-                        width: 270px;
+                        width: 230px;
                         height: 350px;
+                        object-fit: contain;
                     } 
                 }
             }

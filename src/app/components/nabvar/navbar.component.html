@@ -3,7 +3,7 @@
 <div class="navbar__icons">
     <img src="assets/icons/iconLogo.png" alt="imageIcons" class="navbar__icons-image">
     <button (click)="setActive()" class="navbar__button">
-      <img *ngIf="active; else open" src="assets/icons/iconsX.png" alt="iconsX" class="navbar__button-close">
+      <img *ngIf="navbarStatus; else open" src="assets/icons/iconsX.png" alt="iconsX" class="navbar__button-close">
       <ng-template #open><img style="z-index: 10000;"  src="assets/icons/menu.png" alt="imageIcons" class="navbar__button-image"></ng-template>
     </button>
   </div>

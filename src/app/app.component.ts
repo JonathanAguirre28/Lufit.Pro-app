@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LUFIT.PRO';
+  icon: boolean = false;
   isOpen: boolean = false;
 
   onOpenMenu(event: boolean){
     this.isOpen = event;
+    this.icon = event;
   }
 }
