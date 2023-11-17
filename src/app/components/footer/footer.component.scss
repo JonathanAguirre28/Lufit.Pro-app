@@ -28,6 +28,9 @@
                 display: flex;
                 align-items: center;
                 cursor: pointer;
+                &-link {
+                    text-decoration: none;
+                }
                 &-center {
                     display: flex;
                     align-items: center;
@@ -36,6 +39,22 @@
                     height: 50px;
                     font-size: 30px;
                     color: $color-white;
+                }
+            }
+            &-instagram {
+                &-link {
+                    text-decoration: none;
+                }
+                &-center {
+                    width: 50px;
+                    height: 50px;
+                    color: rgb(250, 103, 103);
+                    font-size: 70px;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
             &-video {
@@ -47,6 +66,9 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                &-link {
+                    text-decoration: none;
+                }
                 &-center {
                     color: red;
                     font-size: 30px;
