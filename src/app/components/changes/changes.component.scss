@@ -70,7 +70,8 @@
         &__footer {
             &-image {
                 width: 290px;
-                height: 460px;
+                height: 300px;
+                object-fit: cover;
             }
         }
     }

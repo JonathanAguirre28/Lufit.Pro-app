@@ -89,9 +89,12 @@
         &__content {
             height: 170px;
             display: flex;
+            flex-direction: column;
             justify-content:flex-start;
             align-items: center;
             &-icons {
+                display: flex;
+                flex-direction: column;
                 &-image {
                     width: 64px;
                     height: 69px;

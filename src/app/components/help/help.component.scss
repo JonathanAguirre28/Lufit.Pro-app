@@ -77,12 +77,19 @@
                 width: 358px;
                 gap: 0;
                 &-icons {
-                    width: 39px;
-                    height: 37px;
+                    width: 40px;
+                    height: 40px;
+                    &-center {
+                        font-size: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
                 &-text {
                     font-size: 16px;
                     text-align: center;
+                    line-height: 1.8;
                 }
             }
         }
