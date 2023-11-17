@@ -7,7 +7,9 @@
     flex-direction: column;
     align-items: center;
     &__content {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &-title {
             display: flex;
             justify-content: flex-start;
@@ -15,13 +17,23 @@
             padding: 10px 30px;
             padding-top: 20px;
             color: $color-white;
+            &-mobile {
+                font-size: 32px;
+            }
         }
         &-text {
             text-align: left;
             padding: 30px;
             width: 1130px;
-            color: $color-secondary;
-            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-center {
+                font-size: 24px;
+                color: $color-white;
+                text-align: center;
+                line-height: 1.8;
+            }
         }
 
     }
@@ -57,6 +69,7 @@
                 padding: 10px;
                 &-center{
                     color: $color-white;
+                    font-size: 14px;
                 }
             }
         }

@@ -26,7 +26,18 @@
             padding: 30px;
             &-icons {
                 width: 80px;
-                height: 80px;            
+                height: 80px; 
+                background-color: $color-icon;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                &-center {
+                    width: 75px;
+                    height: 50px;
+                    color: $color-white;
+                    font-size: 50px;
+                }          
             }
             &-text {
                 color: $color-primary;

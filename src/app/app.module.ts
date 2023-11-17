@@ -16,6 +16,7 @@ import { ChangesComponent } from './components/changes/changes.component';
 import { SupplementsComponent } from './components/supplements/supplements.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
