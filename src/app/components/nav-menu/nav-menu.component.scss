@@ -3,7 +3,7 @@
     position: fixed;
     right: 0;
     z-index: 1;
-    &__nav {
+    &__content {
         width: 600px;
         height: 0vh;
         background-color: $color-primary;
@@ -18,22 +18,22 @@
           height: 50vh;
           pointer-events: auto;
         }
-        &-ul{
+        &-menu{
           display: flex;
           justify-content: center;
           flex-direction: column;
-          &-li{
+          &-link{
             margin: .5em 0;
             list-style:none;
             &:target {
               display: none;
             }
-            &-hr {
+            &-space {
               border: 1px solid $color-secondary;
               width: 534px;
             }
           }
-          &-a{
+          &-title{
             color: $color-white;
             text-decoration: none;
             font-size: 20px;
@@ -46,16 +46,16 @@
 @media (max-width: 720px) {
     .navbar {
       position: absolute;
-        &__nav {
+        &__content {
           justify-content: center;
             width: 340px;
-            &-ul {
-              &-a {
+            &-menu {
+              &-title {
                 font-size: 16px;
               }
-              &-li {
+              &-link {
                 margin-bottom: 10px;
-                &-hr {
+                &-space {
                   width: 305px;
                 }
               }
