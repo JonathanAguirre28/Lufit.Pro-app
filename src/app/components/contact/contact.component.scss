@@ -1,17 +1,13 @@
 @import "src/variables.scss";
 .contact {
-    height: 80vh;  
+    height: 100%;  
     width: 100%;  
-    background-color: $color-white;
-    &__content {
-        height: 90%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: $color-primary;
-    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-primary;
+    padding: 40px 0;
     &__title {
         &-content {
             color: $color-white;
