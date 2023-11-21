@@ -1,31 +1,28 @@
 @import "src/variables.scss";
 .hero {
-    padding: 15px 0;
-    padding-top: 113px;
+    background-image: url("/assets/image/imageHeroDes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 100px;
+    width: 100%;
+    height: 821px;
     &__image{
-        background-image: url("/assets/image/imageHeroDes.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 821px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 130px 300px;
+        height: 100%;
     &-title {
-        position: absolute;
-        top: 55%;
-        left: 23%;
-        width: 691px;
-        height: 132px;
+        width: 700px;
+        text-align:left;
         &-content{
             font-size: 60px;
             color: white;
         }
     }
     &-button {
-        position: absolute;
-        top: 80%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-
-        padding: 15px;
         &-content {
             width: 305px;
             height: 60px;
