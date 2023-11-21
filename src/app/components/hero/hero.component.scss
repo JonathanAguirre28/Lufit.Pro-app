@@ -24,11 +24,13 @@
         top: 80%;
         left: 30%;
         transform: translate(-50%, -50%);
-        border: 0;
+
         padding: 15px;
         &-content {
             width: 305px;
             height: 60px;
+            border: none;
+            outline: none;
             padding: 10px 20px;
             background-color: $color-button-primary;
             color: white;
