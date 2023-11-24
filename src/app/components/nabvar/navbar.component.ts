@@ -4,24 +4,24 @@ import { NavbarService } from 'src/app/services/navbar.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-   navbarStatus: boolean = false;
-   constructor(private navbarService: NavbarService) {}
-   ngOnInit(): void {
-    this.getNavbarStatus()
-   }
+  navbarStatus: boolean = false;
+  constructor(private navbarService: NavbarService) {}
+  ngOnInit(): void {
+    this.getNavbarStatus();
+  }
 
-   getNavbarStatus(){
+  getNavbarStatus() {
     this.navbarService.currentNavbar$.subscribe({
-      next:(estatus) => {
+      next: (estatus) => {
         this.navbarStatus = estatus;
-      }
-    })
-   }
+      },
+    });
+  }
 
-   setActive() : void {
-    this.navbarService.setNavbar(!this.navbarStatus)
-   }
+  setActive(): void {
+    this.navbarService.setNavbar(!this.navbarStatus);
+  }
 }
