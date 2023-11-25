@@ -7,7 +7,7 @@ import { NavbarComponent } from './components/nabvar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { HelpComponent } from './components/help/help.component';
@@ -17,7 +17,8 @@ import { SupplementsComponent } from './components/supplements/supplements.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { PictureModalComponent } from './components/picture-modal/picture-modal.component';
 
 @NgModule({
   declarations: [
@@ -33,15 +34,17 @@ import { MatIconModule } from '@angular/material/icon';
     SupplementsComponent,
     ContactComponent,
     FooterComponent,
+    PictureModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule 
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
