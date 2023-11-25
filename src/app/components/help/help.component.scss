@@ -1,105 +1,105 @@
 @import "src/variables.scss";
 .help {
-    width: 100%;
-    height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem 9rem;
+  &__title {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    &__title {
+    justify-content: flex-start;
+    padding: 30px;
+    &-text {
+      font-size: 32px;
+      color: $color-primary;
+    }
+  }
+  &__consultation {
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 30px;
+      width: 100%;
+      &-icons {
+        width: 80px;
+        height: 80px;
+        background-color: $color-icon;
+        border-radius: 50px;
         display: flex;
-        justify-content: flex-start;
-        padding: 30px;
-        &-text {
-            font-size: 32px;
-            color: $color-primary;
-
+        align-items: center;
+        text-align: center;
+        &-center {
+          width: 75px;
+          height: 50px;
+          color: $color-white;
+          font-size: 50px;
         }
+      }
+      &-text {
+        color: $color-primary;
+        font-size: 24px;
+        white-space: wrap;
+      }
     }
-    &__consultation {
-        width: 1130px;
-        &-content {
-            display: flex;
-            gap: 30px;
-            padding: 30px;
-            &-icons {
-                width: 80px;
-                height: 80px; 
-                background-color: $color-icon;
-                border-radius: 50px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                &-center {
-                    width: 75px;
-                    height: 50px;
-                    color: $color-white;
-                    font-size: 50px;
-                }          
-            }
-            &-text {
-                color: $color-primary;
-                font-size: 24px;
-            }
-        }
-    }
+  }
 }
 
-@media (max-width: 720px)  {
-    .help {
+@media (max-width: 720px) {
+  .help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    &__title {
+      &-text {
+        font-size: 20px;
+      }
+    }
+    &__mobile {
+      &-content {
+        width: 240px;
+        height: 280px;
+      }
+    }
+    &__consultation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &__title {
-            &-text {
-                font-size: 20px;
-            }
-        }
-        &__mobile {
-            &-content {
-                width: 240px;
-                height: 280px;
-            }
-        }
-        &__consultation {
+        gap: 0;
+        padding: 1rem 0;
+        &-icons {
+          width: 40px;
+          height: 40px;
+          &-center {
+            font-size: 30px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            &-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 358px;
-                gap: 0;
-                &-icons {
-                    width: 40px;
-                    height: 40px;
-                    &-center {
-                        font-size: 30px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-                &-text {
-                    font-size: 16px;
-                    text-align: center;
-                    line-height: 1.8;
-                }
-            }
+          }
         }
+        &-text {
+          font-size: 16px;
+          text-align: center;
+          line-height: 1.8;
+          padding: 10px;
+        }
+      }
     }
+  }
 }
 
 @media (min-width: 721px) {
-    .help {
-        &__mobile {
-            display: none;
+  .help {
+    &__mobile {
+      display: none;
     }
-}
+  }
 }
