@@ -81,6 +81,7 @@
 
 @media (max-width: 720px) {
   .plans {
+    padding: 1rem;
     &__title {
       width: 286px;
       &-content {
@@ -89,10 +90,10 @@
       }
     }
     &__text {
-      width: 358px;
       &-content {
         font-size: 14px;
         text-align: center;
+
       }
     }
     &__cards {

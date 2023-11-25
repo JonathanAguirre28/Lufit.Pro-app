@@ -1,7 +1,6 @@
 @import "src/variables.scss";
 .contact {
     height: 100%;  
-    width: 100%;  
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -55,11 +54,7 @@
 
 @media (max-width: 720px) {
     .contact {
-        &__content {
-
-        }
         &__title {
-            width: 354px;
             &-content {
                 font-size: 24px;
                 font-weight: 700px;
@@ -67,21 +62,18 @@
             }
         }
         &__subtitle {
-            width: 354px;
             &-content {
                 font-size: 20px;
                 text-align: center;
             }
         }
         &__text {
-            width: 220px;
             &-content {
                 font-size: 14px;
                 text-align: center;
             }
         }
         &__subtext {
-            width: 220px;
             &-content {
                 font-size: 14px;
                 text-align: center;
