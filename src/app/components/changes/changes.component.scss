@@ -1,77 +1,121 @@
 @import "src/variables.scss";
 .changes {
+  background-color: #292929;
+  color: #fff;
+  font-family: Montserrat;
+  text-align: center;
+  width: 100%;
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 1.25rem;
+  }
+  &__sub-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1.25rem;
+  }
+  &__text {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 1.88rem;
+  }
+  &__cto {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 3.75rem;
+  }
+  &__image {
     width: 100%;
-    background-color: white;
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $color-primary;
-    }
+  }
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 720px) {
     &__title {
-        &-content {
-            font-size: 36px;
-            color: $color-white;
-        }
+      font-size: 1.25rem; /* Adjusting title font size for mobile */
+      padding-top: 2rem; /* Adjusting title padding for mobile */
     }
-    &__body {
-        width: 1130px;
-        &-title {
-            &-content {
-                font-size: 32px;
-                color: $color-white;
-            }
-        }
-        &-text {
-            &-content {
-                font-size: 24px;
-                color: $color-white;
-            }
-        }
+    &__sub-title {
+      font-size: 1rem; /* Adjusting sub-title font size for mobile */
+      padding-bottom: 1rem; /* Adjusting sub-title padding for mobile */
     }
-    &__footer {
-        padding-bottom: 40px;
-        &-image {
-            width: 1128px;
-            height: 550px;
-        }
+    &__text,
+    &__cto {
+      font-size: 1rem; /* Adjusting text and CTA font size for mobile */
+      padding-bottom: 1.5rem; /* Adjusting text and CTA padding for mobile */
     }
+  }
+  // width: 100%;
+  // background-color: white;
+  // &__content {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     background-color: $color-primary;
+  // }
+  // &__title {
+  //     &-content {
+  //         font-size: 36px;
+  //         color: $color-white;
+  //     }
+  // }
+  // &__body {
+  //     &-title {
+  //         &-content {
+  //             font-size: 32px;
+  //             color: $color-white;
+  //         }
+  //     }
+  //     &-text {
+  //         &-content {
+  //             font-size: 24px;
+  //             color: $color-white;
+  //         }
+  //     }
+  // }
+  // &__footer {
+  //     padding-bottom: 40px;
+  //     &-image {
+  //         height: 550px;
+  //     }
+  // }
 }
 
-@media (max-width: 720px) {
-    .changes{
-        &__title {
-            width: 358px;
-            padding: 20px;
-            &-content {
-                font-size: 24px;
-                text-align: center;
-            }
-        }
-        &__body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            &-title {
-                width: 355px;
-                &-content {
-                    font-size: 20px;
-                }
-            }
-            &-text {
-                width: 358px;
-                &-content {
-                    font-size: 16px;
-                }
-            }
-        }
-        &__footer {
-            &-image {
-                width: 290px;
-                height: 300px;
-                object-fit: cover;
-            }
-        }
-    }
-}
+// @media (max-width: 720px) {
+//     .changes{
+//         &__title {
+//             width: 358px;
+//             padding: 20px;
+//             &-content {
+//                 font-size: 24px;
+//                 text-align: center;
+//             }
+//         }
+//         &__body {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             text-align: center;
+//             &-title {
+//                 width: 355px;
+//                 &-content {
+//                     font-size: 20px;
+//                 }
+//             }
+//             &-text {
+//                 width: 358px;
+//                 &-content {
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//         &__footer {
+//             &-image {
+//                 width: 290px;
+//                 height: 300px;
+//                 object-fit: cover;
+//             }
+//         }
+//     }
+// }
