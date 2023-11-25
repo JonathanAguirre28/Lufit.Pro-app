@@ -1,28 +1,38 @@
 <section class="plans" id="plans">
-    <div class="plans__title">
-        <h2 class="plans__title-content">PLANES DE ENTRENAMIENTO PERSONALIZADO</h2>
-    </div>
-    <div class="plans__text">
-         <p class="plans__text-content">Contruyamos juntos tu mejor versión. Te ofrezco diferentes opciones de entrenamiento mensual, personalizado según tus nivel, horarios, hábitos y necesidades, para que puedas entrenar estés donde estés. Entrenando presencial (en Tucumán) o por seguimiento online (wn gimnasio o en tu casa), quiero ayudarte a mejorar y cumplir tus objetivos.</p>
-    </div>
+  <div class="plans__title">
+    <h2 class="plans__title-content">PLANES DE ENTRENAMIENTO PERSONALIZADO</h2>
+  </div>
+  <div class="plans__text">
+    <p class="plans__text-content">
+      Construyamos juntos tu mejor versión. Te ofrezco diferentes opciones de
+      entrenamiento mensual, personalizado según tus nivel, horarios, hábitos y
+      necesidades, para que puedas entrenar estés donde estés. Entrenando
+      presencial (en Tucumán) o por seguimiento online (en gimnasio o en tu
+      casa), quiero ayudarte a mejorar y cumplir tus objetivos.
+    </p>
+  </div>
 
-   <div class="plans__cards" *ngFor="let item of cards">
-
+  <div class="plans__cards" *ngFor="let item of cards">
     <div class="plans__cards-center">
-        <div class="plans__cards-center-content">
-            <img src="{{item.imagen}}" alt="imagePlans" class="plans__cards-center-content-image">
-            <img src="{{item.imageMobile}}" alt="imagePlans" class="plans__cards-center-content-imageMobile">
-        </div>
-    
-        <div class="plans__cards-title">
-            <div class="plans__cards-title-content"> {{item.titulo}} </div>
-            <div class="plans__cards-title-span"> {{item.span}} </div>
-             <div class="plans__cards-title-subtitle"> {{item.subtitulo}} </div>
-             <div class="plans__cards-title-text"> {{item.text}} </div>        
-        </div>
+      <div class="plans__cards-center-content">
+        <img
+          src="{{ item.imagen }}"
+          alt="imagePlans"
+          class="plans__cards-center-content-image"
+        />
+        <img
+          src="{{ item.imageMobile }}"
+          alt="imagePlans"
+          class="plans__cards-center-content-imageMobile"
+        />
+      </div>
+
+      <div class="plans__cards-title">
+        <div class="plans__cards-title-content">{{ item.titulo }}</div>
+        <div class="plans__cards-title-span">{{ item.span }}</div>
+        <div class="plans__cards-title-subtitle">{{ item.subtitulo }}</div>
+        <div class="plans__cards-title-text">{{ item.text }}</div>
+      </div>
     </div>
-
-
-   </div>
-
+  </div>
 </section>

@@ -1,165 +1,167 @@
 @import "src/variables.scss";
 .plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 9rem;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    &-content {
+      color: $color-primary;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content {
+      color: $color-primary;
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.8;
+    }
+  }
+  &__cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        &-content {
-            color: $color-primary;
-            font-size: 36px;
-            font-weight: 700;
+    padding: 10px;
+    &-center {
+      width: 710px;
+      color: $color-white;
+      background-color: $color-primary;
+      border-radius: 15px;
+      display: flex;
+      &-content {
+        width: 325px;
+        height: 400px;
+        &-image {
+          cursor: pointer;
         }
+      }
+    }
+    &-title {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      margin-top: 30px;
+      &-span {
+        color: rgba(51, 187, 181, 1);
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+      }
+      &-content {
+        color: $color-button-secondary;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        width: 325px;
+      }
+      &-subtitle {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        width: 325px;
+        margin-top: 30px;
+      }
+      &-text {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        width: 325px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .plans {
+    &__title {
+      width: 286px;
+      &-content {
+        font-size: 20px;
+        text-align: center;
+      }
     }
     &__text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 1130px;
-        &-content {
-            color:$color-primary;
-            text-align: center;
-            font-size: 24px;
-            line-height: 1.8;
-        }
+      width: 358px;
+      &-content {
+        font-size: 14px;
+        text-align: center;
+      }
     }
     &__cards {
+      display: flex;
+      flex-direction: column;
+      &-center {
+        width: 300px;
+        height: 450px;
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        &-center {
-            width: 710px;
-            height: 400px;
-            color: $color-white;
-            background-color: $color-primary;
-            border-radius: 15px;
-            display: flex;
-            &-content {
-                width: 325px;
-                height: 400px;
-                &-image {
-                    cursor: pointer;
-                }
-                &-imageMobile {
-                }
-            }
+        align-items: center;
+        padding-bottom: 0;
+        &-content {
+          width: 300px;
+          &-image {
+            display: none;
+          }
         }
-        &-title {
-            display: flex;
-            flex-direction: column;
-            padding: 30px;
-            margin-top: 30px;
-            &-span {
-                color:rgba(51, 187, 181, 1);
-                font-size: 32px;
-                font-weight: 600;
-                text-align: center;
-            }
-            &-content {
-                color: $color-button-secondary;
-                font-size: 32px;
-                font-weight: 600;
-                text-align: center;
-                width: 325px;
-            }
-            &-subtitle {
-                color: rgba(255, 255, 255, 1);
-                text-align: center;
-                width: 325px;
-                margin-top: 30px;
-
-            }
-            &-text {
-                color: rgba(255, 255, 255, 1);
-                text-align: center;
-                width: 325px;
-                margin-top: 30px;
-            }
+      }
+      &-title {
+        padding: 0;
+        margin-top: 0;
+        text-align: center;
+        padding-bottom: 25px;
+        &-content {
+          font-size: 22px;
+          text-align: center;
+          width: 241px;
         }
+        &-span {
+          font-size: 22px;
+          text-align: center;
+          width: 241px;
+        }
+        &-subtitle {
+          font-size: 14px;
+          text-align: center;
+          width: 251px;
+        }
+        &-text {
+          font-size: 14px;
+          text-align: center;
+          width: 251px;
+        }
+      }
     }
-}
-
-@media (max-width: 720px)  {
-    .plans {
-        &__title {
-            width: 286px;
-            &-content {
-                font-size: 20px;
-                text-align: center;
-            }
-        }
-        &__text {
-            width: 358px;
-            &-content {
-                font-size: 14px;
-                text-align: center;
-            }
-        }
-        &__cards {
-            display: flex;
-            flex-direction: column;
-            &-center {
-                width: 300px;
-                height: 450px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-bottom: 0;
-                &-content {
-                    width: 300px;
-                    &-image {
-                        display: none;
-                    }
-                    &-imageMobile {
-
-                    }
-                }
-            }
-            &-title {
-                padding: 0;
-                margin-top: 0;
-                text-align: center;
-                padding-bottom: 25px;
-            &-content {
-                font-size: 22px;
-                text-align: center;
-                width: 241px;
-            }
-            &-span {
-                font-size: 22px;
-                text-align: center;
-                width: 241px;
-            }
-            &-subtitle {
-                font-size: 14px;
-                text-align: center;
-                width: 251px;
-
-            }
-            &-text {
-                font-size: 14px;
-                text-align: center;
-                width: 251px;
-
-            }
-        }
-    }
-}
+  }
 }
 
 @media (min-width: 721px) {
-    .plans {
-        &__cards {
-            &-center {
-                &-content{
-                    &-imageMobile {
-                        display: none;
-                    }
-                }
-            }
+  .plans {
+    &__cards {
+      &-center {
+        &-content {
+          &-imageMobile {
+            display: none;
+          }
         }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px 15px 0 0;
+  }
 }
