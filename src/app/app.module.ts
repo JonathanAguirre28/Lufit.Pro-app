@@ -19,6 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PictureModalComponent } from './components/picture-modal/picture-modal.component';
+import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
+
 
 @NgModule({
   declarations: [
@@ -43,8 +45,17 @@ import { PictureModalComponent } from './components/picture-modal/picture-modal.
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
+    GalleryModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        autoHeight: true,
+        imageSize: 'cover'
+      } as GalleryConfig
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
