@@ -1,151 +1,90 @@
 @import "src/variables.scss";
 .footer {
-    height: 100%;
-    width: 100%;
-    &__content {   
-        display: flex;
-        justify-content: space-between;
-        background-color: $color-footer;
-        &-icons {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px;
-            &-image {
-                width: 74px;
-                height: 84px;
-            }
-        } 
-        &-rigth {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            margin-right: 50px;
-            gap: 50px;
-            &-phone {
-                width: 50px;
-                height: 50px;
-                background-color: black;
-                border-radius: 30px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                &-link {
-                    text-decoration: none;
-                }
-                &-center {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 50px;
-                    height: 50px;
-                    font-size: 30px;
-                    color: $color-white;
-                }
-            }
-            &-instagram {
-                &-link {
-                    text-decoration: none;
-                }
-                &-center {
-                    width: 50px;
-                    height: 50px;
-                    color: black;
-                    font-size: 50px;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-            &-video {
-                width: 50px;
-                height: 50px;
-                background-color: black;
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                &-link {
-                    text-decoration: none;
-                }
-                &-center {
-                    color: white;
-                    font-size: 30px;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                }
-            }
-        }       
+  height: 100%;
+  width: 100%;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-footer;
+    &-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      &-image {
+        width: 74px;
+        height: 84px;
+      }
     }
+    &-rigth {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-right: 50px;
+      gap: 50px;
+    }
+  }
 }
 
 @media (max-width: 720px) {
-    .footer {
-        
-        &__content {
-            height: 170px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content:flex-start;
-            align-items: center;
-            &-icons {
-                display: flex;
-                flex-direction: column;
-                gap: 0;
-                &-image {
-                    width: 52px;
-                    height: 56px;
-                }
-                &-text {
-                    font-size: 14px;
-                }
-            }
-            &-rigth {
-                padding: 0;
-                margin-right: 0;
-                gap: 10px;
-                &-phone {
-                    width: 20px;
-                    height: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    &-link {
-                    }
-                    &-center {
-                        font-size: 15px;
-                    }
-                }
-                &-instagram {
-                    &-link {
-                    }
-                    &-center {
-                        width: 22px;
-                        height: 22px;
-                        font-size: 25px;
-                    }
-                }
-                &-video {
-                    width: 22px;
-                    height: 22px;
-                    &-link {
-
-                    }
-                    &-center {
-                        font-size: 17px;
-                        width: 22px;
-                        height: 22px;
-                    }
-                }
-            }
+  .footer {
+    &__content {
+      height: 170px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      &-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        &-image {
+          width: 52px;
+          height: 56px;
         }
+        &-text {
+          font-size: 14px;
+        }
+      }
+      &-rigth {
+        padding: 0;
+        margin-right: 0;
+        gap: 2.25rem;
+        display: flex;
+        align-items: center;
+        &-phone {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &-link {
+          }
+          &-center {
+            font-size: 10px;
+          }
+        }
+        &-instagram {
+          &-link {
+          }
+          &-center {
+            width: 22px;
+            height: 22px;
+            font-size: 25px;
+          }
+        }
+        &-video {
+          width: 22px;
+          height: 22px;
+          padding-bottom: 15px;
+          &-center {
+            font-size: 17px;
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
     }
+  }
 }
