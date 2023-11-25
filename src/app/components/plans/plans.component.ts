@@ -21,6 +21,8 @@ export class PlansComponent {
       span: '(Tucumán)',
       subtitulo: 'Plan por 30 días adaptado a tus necesidades y preferencias.',
       text: 'Acompañamiento presencial en gimnasio.',
+      message:
+        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan por 30 días - ENTRENAMIENTO PERSONALIZADO"',
     },
     {
       imagen: 'assets/image/imagePlansTwo.png',
@@ -30,6 +32,8 @@ export class PlansComponent {
       subtitulo:
         'Entrena conmigo donde estés. Plan por 30 días adaptado a tus necesidades.',
       text: 'Seguimiento integral online.',
+      message:
+        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan por 30 días ONLINE- ENTRENAMIENTO EN GIMNASIO"',
     },
     {
       imagen: 'assets/image/imagePlansThree.png',
@@ -39,6 +43,8 @@ export class PlansComponent {
       subtitulo:
         'Plan por 30 dias para entrenar conmigo con los materiales que tengas en casa.',
       text: 'Seguimiento integral online.',
+      message:
+        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan por 30 días ONLINE- ENTRENAMIENTO EN CASA"',
     },
   ];
 }

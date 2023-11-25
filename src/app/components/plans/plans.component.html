@@ -13,7 +13,7 @@
   </div>
 
   <div class="plans__cards" *ngFor="let item of cards">
-    <div class="plans__cards-center">
+    <a class="plans__cards-center" [href]="item.message" target="_blank">
       <div class="plans__cards-center-content">
         <img
           src="{{ item.imagen }}"
@@ -33,6 +33,6 @@
         <div class="plans__cards-title-subtitle">{{ item.subtitulo }}</div>
         <div class="plans__cards-title-text">{{ item.text }}</div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
