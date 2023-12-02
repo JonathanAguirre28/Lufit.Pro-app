@@ -23,10 +23,13 @@
     font-weight: 300;
   }
   &__cto {
+    cursor: pointer;
+    text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 3.75rem;
+    margin-bottom: 3.75rem;
     color: #bb83b8;
+
   }
   &__image {
     width: 100%;
