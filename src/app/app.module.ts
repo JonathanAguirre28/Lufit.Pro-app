@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PictureModalComponent } from './components/picture-modal/picture-modal.component';
 import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
+import { BeforeAfterComponent } from './components/before-after/before-after.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
     ContactComponent,
     FooterComponent,
     PictureModalComponent,
+    BeforeAfterComponent,
   ],
   imports: [
     BrowserModule,
