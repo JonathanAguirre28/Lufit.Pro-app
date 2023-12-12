@@ -1,10 +1,10 @@
 @import "src/variables.scss";
 .hero {
   height: 43.75rem;
-  background-image: url("/assets/image/imageHeroDes.png");
+  background-image: url("/assets/image/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   @media screen and (max-width: 720px) {
     height: 24.375rem;
   }

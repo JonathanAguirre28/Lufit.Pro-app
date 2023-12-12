@@ -15,8 +15,8 @@ export class PlansComponent {
 
   cards = [
     {
-      imagen: 'assets/image/imagePlansOne.png',
-      imageMobile: 'assets/image/imagePlansOne.png',
+      imagen: 'assets/image/imagePlansOneAlt.png',
+      imageMobile: 'assets/image/imagePlansOneAlt.png',
       titulo: 'ENTRENAMIENTO PERSONALIZADO',
       span: '(Tucumán)',
       subtitulo: 'Plan por 30 días adaptado a tus necesidades y preferencias.',
