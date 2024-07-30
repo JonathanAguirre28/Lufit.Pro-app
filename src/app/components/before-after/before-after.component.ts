@@ -20,6 +20,14 @@ export class BeforeAfterComponent {
   ngOnInit() {
     this.images = [
       new ImageItem({
+        src: 'assets/before-after/00.jpeg',
+        thumb: 'assets/before-after/00.jpeg',
+      }),
+      new ImageItem({
+        src: 'assets/before-after/0.jpeg',
+        thumb: 'assets/before-after/0.jpeg',
+      }),
+      new ImageItem({
         src: 'assets/before-after/1.jpeg',
         thumb: 'assets/before-after/1.jpeg',
       }),

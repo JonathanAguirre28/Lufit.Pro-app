@@ -1,23 +1,25 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { GalleryItem, ImageItem } from 'ng-gallery';
+import { PictureModalService } from 'src/app/services/picture-modal.service';
 
 @Component({
   selector: 'app-picture-modal',
   templateUrl: './picture-modal.component.html',
   styleUrls: ['./picture-modal.component.scss'],
 })
-export class PictureModalComponent implements OnInit {
+export class PictureModalComponent implements OnInit, OnDestroy {
   images!: GalleryItem[];
 
   galleryOptions: any = {
     thumbnails: true,
     imageSwipe: true,
-    imageSize: 'cover'
+    imageSize: 'cover',
     // Add more options as per your requirement
   };
 
-  
+  constructor(private pictureModalService: PictureModalService) {}
+
   ngOnInit() {
     this.images = [
       new ImageItem({
@@ -105,5 +107,13 @@ export class PictureModalComponent implements OnInit {
         thumb: 'assets/gallery/Lu Corzo (26).jpg',
       }),
     ];
+  }
+
+  ngOnDestroy(): void {
+    this.pictureModalService.setIsOpen(true)
+    setTimeout(()=>{
+      this.pictureModalService.setIsOpen(false)
+    },1500)
+
   }
 }

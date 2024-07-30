@@ -8,6 +8,7 @@ import { PictureModalService } from 'src/app/services/picture-modal.service';
 })
 export class AboutMeComponent {
   constructor(private pictureModalService: PictureModalService) {}
+  
   openModal(picture: string) {
     this.pictureModalService.open(picture);
   }

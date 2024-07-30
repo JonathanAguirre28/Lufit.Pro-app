@@ -47,6 +47,11 @@
     flex-wrap: wrap;
     gap: 4rem;
     padding-bottom: 3rem;
+    img{
+      width: 320px;
+      height: 450px;
+      object-fit: cover;
+    }
   }
 
   img {
