@@ -30,10 +30,10 @@ export class PlansComponent {
       titulo: 'ENTRENAMIENTO PERSONALIZADO ONLINE',
       span: 'EN GIMNASIO',
       subtitulo:
-        'Entrena conmigo donde estés. Plan por 30 días adaptado a tus necesidades.',
+        'Entrena conmigo donde estés. Plan bimestral adaptado a tus necesidades.',
       text: 'Seguimiento integral online.',
       message:
-        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan por 30 días ONLINE- ENTRENAMIENTO EN GIMNASIO"',
+        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan bimestral ONLINE- ENTRENAMIENTO EN GIMNASIO"',
     },
     {
       imagen: 'assets/image/imagePlansThree.png',
@@ -41,10 +41,10 @@ export class PlansComponent {
       titulo: 'ENTRENAMIENTO PERSONALIZADO ONLINE',
       span: 'EN TU CASA',
       subtitulo:
-        'Plan por 30 dias para entrenar conmigo con los materiales que tengas en casa.',
+        'Plan bimestral para entrenar conmigo con los materiales que tengas en casa.',
       text: 'Seguimiento integral online.',
       message:
-        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan por 30 días ONLINE- ENTRENAMIENTO EN CASA"',
+        'https://wa.me/5493813043142?text=Hola Luciana, me interesa preguntar por "Plan bimestral ONLINE- ENTRENAMIENTO EN CASA"',
     },
   ];
 }
