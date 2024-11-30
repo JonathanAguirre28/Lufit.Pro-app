@@ -1,17 +1,28 @@
 @import "src/variables.scss";
 .hero {
   height: 43.75rem;
-  background-image: url("/assets/image/hero.jpg");
+  position: relative;
+  background-image: url("/assets/image/hero2024.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   @media screen and (max-width: 720px) {
     height: 24.375rem;
   }
   @media screen and (max-width: 350px) {
-    height: 20rem;
+    height: 450px;
+    background-size: fill;
   }
 
+  &__backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    background: black;
+  }
   &__image {
     position: relative;
     height: 100%;
@@ -29,8 +40,9 @@
     }
     &-title {
       color: #f7f7fa;
-      font-size: 3.25rem;
+      font-size: 60px;
       font-weight: 700;
+      text-align: left;
       width: 50%;
       @media screen and (max-width: 825px) {
         font-size: 1.875rem;
@@ -38,69 +50,38 @@
         text-align: center;
         padding: 1rem;
       }
-      @media screen and (max-width: 340px) {
-        font-size: 1.25rem;
-        width: auto;
-        text-align: center;
-        padding: 1rem;
-      }
     }
 
-    &-button {
-      &-content {
-        width: 19.0625rem;
-        height: 3.75rem;
+    &-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
         border: none;
-        outline: none;
+        background: #8125a7;
+        width: 300px;
+        height: 60px;
+        color: #ffffff;
+        font-size: 24px;
         text-decoration: none;
-        padding: 1rem 4rem;
-        border-radius: 3.125rem;
-        background: #5f2d88;
-        cursor: pointer;
-        color: #fff;
-        text-align: center;
-        font-size: 1.5rem;
         font-weight: 700;
+        border-radius: 50px;
 
-        @media screen and (max-width: 825px) {
-          width: 12.8125rem;
-          height: 2.8125rem;
-          font-size: 1rem;
+        @media screen and (max-width: 720px) {
+          width: 150px;
+          height: 35px;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          &-icon {
+            height: 16px;
+          }
         }
       }
     }
   }
 }
-
-// @media (max-width: 720px) {
-//   .hero {
-//     width: 412px;
-//     height: 390px;
-//     padding: 0;
-//     margin-top: 0;
-//     &__image {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-evenly;
-//       align-items: center;
-//       padding: 0;
-//       &-title {
-//         width: 321px;
-//         height: 66px;
-//         text-align: center;
-//         margin-top: 130px;
-//         &-content {
-//           font-size: 30px;
-//         }
-//       }
-//       &-button {
-//         &-content {
-//           font-size: 14px;
-//           width: 205px;
-//           height: 45px;
-//           padding: 0;
-//         }
-//       }
-//     }
-//   }
-// }

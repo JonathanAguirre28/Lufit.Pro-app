@@ -8,9 +8,16 @@ import { NavbarService } from 'src/app/services/navbar.service';
 })
 export class NavbarComponent {
   navbarStatus: boolean = false;
+  actualSection: string = '';
+
   constructor(private navbarService: NavbarService) {}
+
   ngOnInit(): void {
     this.getNavbarStatus();
+  }
+
+  handleClick(section: string): void {
+    this.actualSection = section;
   }
 
   getNavbarStatus() {

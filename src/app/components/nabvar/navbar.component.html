@@ -5,6 +5,48 @@
       alt="imageIcons"
       class="navbar__icons-image"
     />
+    <div class="navbar__links">
+      <a
+        class="navbar__links-anchor"
+        href="#about-me"
+        (click)="handleClick('about-me')"
+        [ngClass]="{'navbar__links-anchor--active': actualSection === 'about-me'}"
+      >
+        SOBRE MÍ
+      </a>
+      <a
+        class="navbar__links-anchor"
+        href="#plans"
+        (click)="handleClick('plans')"
+        [ngClass]="{'navbar__links-anchor--active': actualSection === 'plans'}"
+      >
+        PLANES
+      </a>
+      <a
+        class="navbar__links-anchor"
+        href="#consultation"
+        (click)="handleClick('consultation')"
+        [ngClass]="{'navbar__links-anchor--active': actualSection === 'consultation'}"
+      >
+        ASESORAMIENTO
+      </a>
+      <a
+        class="navbar__links-anchor"
+        href="#changes"
+        (click)="handleClick('changes')"
+        [ngClass]="{'navbar__links-anchor--active': actualSection === 'changes'}"
+      >
+        ANTES Y DESPUES
+      </a>
+      <a
+        class="navbar__links-anchor"
+        href="#contact"
+        (click)="handleClick('contact')"
+        [ngClass]="{'navbar__links-anchor--active': actualSection === 'contact'}"
+      >
+        CONTACTO
+      </a>
+    </div>
     <button (click)="setActive()" class="navbar__button">
       <img
         *ngIf="navbarStatus; else open"

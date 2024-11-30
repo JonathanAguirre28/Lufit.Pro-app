@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PictureModalService } from './services/picture-modal.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   isOpen: boolean = false;
   isGalleryOpen: boolean = false;
 
-  constructor(private pictureModalService: PictureModalService) {}
+  constructor(private pictureModalService: PictureModalService, private router:Router) {}
 
   ngOnInit() {
     this.pictureModalService.getIsOpen().subscribe({
@@ -20,6 +21,13 @@ export class AppComponent {
         this.isGalleryOpen = res;
       },
     });
+    if (window.location.hash) {
+      this.router.navigate([], {
+        queryParams: {},
+        fragment: undefined,
+        replaceUrl: true,
+      });
+    }
   }
 
   onOpenMenu(event: boolean) {
