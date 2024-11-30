@@ -1,0 +1,79 @@
+.embla-carousel-luciana {
+  padding: 8rem 0rem;
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+    }
+    &-arrows {
+      display: flex;
+      gap: 1.5rem;
+      &-icon {
+        padding: 5px;
+        border-radius: 50%;
+        background: #ab1ee6;
+        cursor: pointer;
+      }
+    }
+    &-selector {
+      display: flex;
+      gap: 10px;
+      &-dot {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border: 2px solid #d9d9d9;
+        border-radius: 50%;
+        box-sizing: border-box;
+        &--active {
+          border: 2px solid #4a68cb;
+        }
+        @media screen and (max-width: 480px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .embla {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .embla__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .embla__slide {
+    flex: 0 0 45%; // Adjust the slide width as needed
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 5px 5px 5px #000000fa);
+
+    .image {
+      height: 500px;
+      width: 390px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 15px;
+      @media screen and (max-width: 720px) {
+        height: 230px;
+        width: 153px;
+      }
+      &--active {
+        height: 620px;
+        width: 600px;
+        object-fit: contain;
+        @media screen and (max-width: 720px) {
+          height: 280px;
+          width: 242px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<div class="embla-carousel-luciana">
+  <div class="embla" #track>
+    <div class="embla__container">
+      <div class="embla__slide" *ngFor="let image of images; index as i">
+        <img
+          class="image"
+          [ngClass]="{ 'image--active': i === activeSnap }"
+          [src]="image.data.src"
+          alt="Luciana picture"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="embla-carousel-luciana__actions">
+    <div class="embla-carousel-luciana__actions-arrows">
+      <img
+        class="embla-carousel-luciana__actions-arrows-icon"
+        src="assets/icons/back-arrow.svg"
+        alt="Back arrow"
+        (click)="prevSlide()"
+      />
+      <img
+        class="embla-carousel-luciana__actions-arrows-icon"
+        src="assets/icons/foward-arrow.svg"
+        alt="forward arrow"
+        (click)="nextSlide()"
+      />
+    </div>
+    <div class="embla-carousel-luciana__actions-selector">
+      <div
+        *ngFor="let image of images; index as i"
+        class="embla-carousel-luciana__actions-selector-dot"
+        [ngClass]="{
+          'embla-carousel-luciana__actions-selector-dot--active':
+            i === activeSnap
+        }"
+        (click)="scrollTo(i)"
+      ></div>
+    </div>
+  </div>
+</div>

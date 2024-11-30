@@ -21,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { PictureModalComponent } from './components/picture-modal/picture-modal.component';
 import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
 import { BeforeAfterComponent } from './components/before-after/before-after.component';
+import { EmblaCarouselLucianaComponent } from './components/embla-carousel-luciana/embla-carousel-luciana.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { BeforeAfterComponent } from './components/before-after/before-after.com
     FooterComponent,
     PictureModalComponent,
     BeforeAfterComponent,
+    EmblaCarouselLucianaComponent,
   ],
   imports: [
     BrowserModule,
