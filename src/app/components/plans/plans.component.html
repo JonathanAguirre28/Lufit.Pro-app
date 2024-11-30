@@ -4,11 +4,16 @@
   </div>
   <div class="plans__text">
     <p class="plans__text-content">
-      Construyamos juntos tu mejor versión. Te ofrezco diferentes opciones de
-      entrenamiento mensual, personalizado según tu nivel, horarios, hábitos y
-      necesidades, para que puedas entrenar estés donde estés. Entrenando
-      presencial (en Tucumán) o por seguimiento online (en gimnasio o en tu
-      casa), quiero ayudarte a mejorar y cumplir tus objetivos.
+      <span>
+        Construyamos juntos tu mejor versión. Te ofrezco diferentes opciones de
+        entrenamiento mensual, personalizado según tu nivel, horarios, hábitos y
+        necesidades, para que puedas entrenar estés donde estés.
+      </span>
+      <span
+        >Entrenando presencial (en Tucumán) o por seguimiento online (en
+        gimnasio o en tu casa), quiero ayudarte a mejorar y cumplir tus
+        objetivos.</span
+      >
     </p>
   </div>
 
@@ -20,18 +25,15 @@
           alt="imagePlans"
           class="plans__cards-center-content-image"
         />
-        <img
-          src="{{ item.imageMobile }}"
-          alt="imagePlans"
-          class="plans__cards-center-content-imageMobile"
-        />
       </div>
 
       <div class="plans__cards-title">
         <div class="plans__cards-title-content">{{ item.titulo }}</div>
         <div class="plans__cards-title-span">{{ item.span }}</div>
-        <div class="plans__cards-title-subtitle">{{ item.subtitulo }}</div>
         <div class="plans__cards-title-text">{{ item.text }}</div>
+        <div class="plans__cards-title-wsp">
+          <img src="assets/icons/card-wsp-icon.svg" alt="whatsapp icon" />
+        </div>
       </div>
     </a>
   </div>
