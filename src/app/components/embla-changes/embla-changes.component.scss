@@ -1,4 +1,9 @@
 .embla-carousel-luciana {
+  padding: 4rem 0px;
+  padding-bottom: 8rem;
+  @media screen and (max-width: 840px) {
+    padding: 2rem 0px;
+  }
     &__actions {
       display: flex;
       justify-content: space-between;
@@ -61,13 +66,12 @@
         border-radius: 15px;
         @media screen and (max-width: 720px) {
           height: 230px;
-          width: 153px;
+          width: 240px;
         }
         &--active {
-          object-fit: contain;
           @media screen and (max-width: 720px) {
-            height: 280px;
-            width: 242px;
+            height: 230px;
+            width: 240px;
           }
         }
       }

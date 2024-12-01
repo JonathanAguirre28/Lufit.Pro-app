@@ -1,90 +1,121 @@
 @import "src/variables.scss";
 .contact {
-    height: 100%;  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color-primary;
-    padding: 40px 0;
-    &__title {
-        &-content {
-            color: $color-white;
-            font-size: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-primary;
+  padding: 40px 0;
+  &__title {
+    &-content {
+      color: $color-white;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      @media screen and (max-width: 840px) {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+  &__subtitle {
+    &-content {
+      color: $color-white;
+      font-size: 32px;
+    }
+  }
+  &__text {
+    &-content {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      @media screen and (max-width: 840px) {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+  &__subtext {
+    &-content {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      @media screen and (max-width: 840px) {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+  &__button {
+    padding-top: 35px;
+    &-content {
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      background-color: #ab1ee6;
+      color: $color-white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.5s;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
 
-        }
+      @media screen and (max-width: 840px) {
+        width: 130px;
+        height: 35px;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: $color-button-secondary;
+      }
     }
-    &__subtitle {
-        &-content {
-            color: $color-white;
-            font-size: 32px;
-        }
-    }
-    &__text {
-        &-content {
-            color: #fff;
-            font-size: 24px;
-        }
-    }
-    &__subtext {
-        &-content {
-            color: #fff;
-            font-size: 24px;
-        }
-    }
-    &__button {
-        padding-top: 35px;
-        &-content {
-            width: 305px;
-            height: 60px;
-            border: none;
-            outline: none;
-            background-color:$color-button-primary;
-            color: $color-white;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 0.5s;
-            font-size: 24px;
-            &:hover {
-                background-color: $color-button-secondary;
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 720px) {
-    .contact {
-        &__title {
-            &-content {
-                font-size: 24px;
-                font-weight: 700px;
-                text-align: center;
-            }
-        }
-        &__subtitle {
-            &-content {
-                font-size: 20px;
-                text-align: center;
-            }
-        }
-        &__text {
-            &-content {
-                font-size: 14px;
-                text-align: center;
-            }
-        }
-        &__subtext {
-            &-content {
-                font-size: 14px;
-                text-align: center;
-            }
-        }
-        &__button {
-            &-content {
-                width: 205px;
-                height: 45px;
-                font-size: 16px
-            }
-        }
+  .contact {
+    &__title {
+      &-content {
+        font-size: 24px;
+        font-weight: 700px;
+        text-align: center;
+      }
     }
+    &__subtitle {
+      &-content {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    &__text {
+      &-content {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    &__subtext {
+      &-content {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    &__button {
+      &-content {
+        width: 205px;
+        height: 45px;
+        font-size: 16px;
+      }
+    }
+  }
 }
