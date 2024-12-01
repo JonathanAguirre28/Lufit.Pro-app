@@ -1,13 +1,25 @@
 @import "src/variables.scss";
+
 .consultation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
+  padding: 4rem 0px;
+  @media screen and (max-width: 720px) {
+    padding: 4rem 2rem;
+  }
   &__title {
     &-text {
       font-size: 36px;
-      font-weight: 900;
+      font-weight: 700;
+      text-align: center;
       color: $color-primary;
+      @media screen and (max-width: 720px) {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+      }
     }
   }
   &__body {
@@ -18,22 +30,43 @@
     &-subtitle {
       &-text {
         font-size: 32px;
+        font-weight: 600;
+        text-align: center;
         color: $color-primary;
+        @media screen and (max-width: 720px) {
+          font-size: 20px;
+          font-weight: 600;
+          text-align: center;
+        }
       }
     }
     &-text {
       &-content {
         font-size: 24px;
+        font-weight: 400;
+        text-align: left;
         color: $color-primary;
-        line-height: 1.8;
         padding: 0 9rem;
+        @media screen and (max-width: 720px) {
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+          padding: 0 0rem;
+        }
       }
     }
   }
   &__footer {
     &-title {
       font-size: 32px;
+      font-weight: 600;
+      text-align: left;
       color: $color-primary;
+      @media screen and (max-width: 720px) {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+      }
     }
   }
   &__button {
@@ -43,63 +76,18 @@
       height: 40px;
       border: none;
       outline: none;
-      background-color: $color-button-primary;
+      background-color: #ab1ee6;
       color: $color-white;
       border-radius: 50px;
       cursor: pointer;
       transition: 0.5s;
       font-size: 18px;
+      @media screen and (max-width: 720px) {
+        width: 130px;
+        height: 35px;
+      }
       &:hover {
         background-color: $color-button-secondary;
-      }
-    }
-  }
-}
-@media (max-width: 720px) {
-  .consultation {
-    &__title {
-      width: 286px;
-      &-text {
-        font-size: 24px;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: center;
-      }
-    }
-    &__body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      &-subtitle {
-        width: 276px;
-        &-text {
-          font-size: 20px;
-        }
-      }
-      &-text {
-        &-content {
-          font-size: 14px;
-          padding: 5px;
-        }
-      }
-    }
-    &__footer {
-      width: 273px;
-      margin-bottom: 15px;
-      &-title {
-        font-size: 20px;
-        text-align: center;
-      }
-    }
-    &__button {
-      width: 114px;
-      height: 35px;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      &-content {
-        font-size: 14px;
       }
     }
   }
