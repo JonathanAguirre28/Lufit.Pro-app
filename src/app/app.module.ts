@@ -22,6 +22,7 @@ import { PictureModalComponent } from './components/picture-modal/picture-modal.
 import { GALLERY_CONFIG, GalleryConfig, GalleryModule } from 'ng-gallery';
 import { BeforeAfterComponent } from './components/before-after/before-after.component';
 import { EmblaCarouselLucianaComponent } from './components/embla-carousel-luciana/embla-carousel-luciana.component';
+import { EmblaChangesComponent } from './components/embla-changes/embla-changes.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { EmblaCarouselLucianaComponent } from './components/embla-carousel-lucia
     PictureModalComponent,
     BeforeAfterComponent,
     EmblaCarouselLucianaComponent,
+    EmblaChangesComponent,
   ],
   imports: [
     BrowserModule,
