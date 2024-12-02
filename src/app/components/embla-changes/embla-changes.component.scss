@@ -20,6 +20,9 @@
           border-radius: 50%;
           background: #ab1ee6;
           cursor: pointer;
+          @media screen and (max-width: 480px) {
+            height: 16px;
+          }
         }
       }
       &-selector {
@@ -45,11 +48,13 @@
     .embla {
       overflow: hidden;
       margin-bottom: 10px;
+      border-radius: 15px;
     }
   
     .embla__container {
       display: flex;
       align-items: center;
+      border-radius: 15px;
     }
   
     .embla__slide {
@@ -57,6 +62,7 @@
       margin: 0 10px;
       display: flex;
       justify-content: center;
+      border-radius: 15px;
       filter: drop-shadow(0px 5px 5px 5px #000000fa);
   
       .image {
@@ -67,11 +73,13 @@
         @media screen and (max-width: 720px) {
           height: 230px;
           width: 240px;
+          border-radius: 15px;
         }
         &--active {
           @media screen and (max-width: 720px) {
             height: 230px;
             width: 240px;
+            border-radius: 15px;
           }
         }
       }

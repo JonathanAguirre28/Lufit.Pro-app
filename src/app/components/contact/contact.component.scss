@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: $color-primary;
+  background-color: #292929;
   padding: 40px 0;
   &__title {
     &-content {
@@ -53,21 +53,29 @@
     }
   }
   &__button {
-    padding-top: 35px;
-    &-content {
-      width: 220px;
-      height: 50px;
-      border: none;
-      outline: none;
-      background-color: #ab1ee6;
+    width: 220px;
+    height: 50px;
+    background-color: #ab1ee6;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 840px) {
+      width: 130px;
+      height: 35px;
+    }
+    a {
       color: $color-white;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
-
+      text-decoration: none;
       @media screen and (max-width: 840px) {
         width: 130px;
         height: 35px;
@@ -75,10 +83,10 @@
         font-weight: 700;
         text-align: center;
       }
+    }
 
-      &:hover {
-        background-color: $color-button-secondary;
-      }
+    &:hover {
+      background-color: $color-button-secondary;
     }
   }
 }

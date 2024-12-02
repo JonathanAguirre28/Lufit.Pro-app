@@ -1,5 +1,9 @@
 .embla-carousel-luciana {
   padding: 8rem 0rem;
+  @media screen and (max-width: 480px) {
+    padding: 4rem 0rem;
+    padding-bottom: 0;
+  }
   &__actions {
     display: flex;
     justify-content: space-between;
@@ -16,6 +20,9 @@
         border-radius: 50%;
         background: #ab1ee6;
         cursor: pointer;
+        @media screen and (max-width: 480px) {
+          height: 16px;
+        }
       }
     }
     &-selector {
@@ -41,11 +48,13 @@
   .embla {
     overflow: hidden;
     margin-bottom: 10px;
+    border-radius: 15px;
   }
 
   .embla__container {
     display: flex;
     align-items: center;
+    border-radius: 15px;
   }
 
   .embla__slide {
@@ -54,6 +63,7 @@
     display: flex;
     justify-content: center;
     filter: drop-shadow(0px 5px 5px 5px #000000fa);
+    border-radius: 15px;
 
     .image {
       height: 500px;
@@ -64,14 +74,17 @@
       @media screen and (max-width: 720px) {
         height: 230px;
         width: 153px;
+        border-radius: 15px;
       }
       &--active {
         height: 620px;
         width: 600px;
         object-fit: contain;
+        border-radius: 15px;
         @media screen and (max-width: 720px) {
           height: 280px;
           width: 242px;
+          border-radius: 15px;
         }
       }
     }

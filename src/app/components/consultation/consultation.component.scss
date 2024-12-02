@@ -85,6 +85,10 @@
       @media screen and (max-width: 720px) {
         width: 130px;
         height: 35px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
       }
       &:hover {
         background-color: $color-button-secondary;
